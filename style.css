@@ -118,3 +118,15 @@ a.gcard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,37,55,.14
 /* 고정 그라데이션 아래 바탕색 (긴 페이지·iOS에서 하얗게 비지 않게) */
 body.t-abyss,body.t-rev{background-color:var(--bg)!important}
 html:has(body.t-abyss){background:#0b0810}html:has(body.t-rev){background:#110E0F}
+
+/* 상단 메뉴: 테마마다 글꼴이 달라도 칸 위치·높이는 같게 (칸 폭 고정 + 가운데 정렬) */
+header nav{gap:4px!important;align-items:center}
+header nav a{display:inline-block;box-sizing:border-box;text-align:center;font-size:14px!important;line-height:22px;height:32px;padding:5px 0 3px!important;flex:none}
+header nav a:nth-child(1){width:44px}
+header nav a:nth-child(2),header nav a:nth-child(3){width:92px}
+header nav a:nth-child(4){width:70px}
+header nav a:nth-child(5){width:124px}
+header .wrap{min-height:62px}
+.brand,.bname{line-height:1}
+@media(max-width:680px){header nav{gap:0!important}header nav a{font-size:13px!important}header nav a:nth-child(1){width:30px}header nav a:nth-child(2),header nav a:nth-child(3){width:79px}header nav a:nth-child(4){width:60px}header nav a:nth-child(5){width:104px}}
+@media(max-width:360px){header nav a{font-size:12px!important}header nav a:nth-child(1){width:26px}header nav a:nth-child(2),header nav a:nth-child(3){width:72px}header nav a:nth-child(4){width:54px}header nav a:nth-child(5){width:96px}}
