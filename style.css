@@ -7,7 +7,11 @@ a{color:var(--link)}
 header{position:sticky;top:0;z-index:5;background:var(--hbg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
 header .wrap{display:flex;align-items:center;gap:14px;min-height:62px}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;flex:none}
-.brand .mk{height:26px;width:auto}.brand .wd{height:20px;width:auto}
+.brand{gap:10px}.brand .mk{height:36px;width:auto}
+.bname{display:flex;flex-direction:column;line-height:1;font-family:"Noto Sans KR",system-ui,sans-serif}
+.bname b{font-size:19px;font-weight:700;letter-spacing:.02em;color:var(--brand,#1b2537)}
+.bname i{font-style:normal;font-size:10px;letter-spacing:.42em;margin-top:3px;color:var(--brand2,#4a5872)}
+.t-abyss,.t-rev{--brand:#f1e7d4;--brand2:#b9ad99}
 header nav{margin-left:auto;display:flex;gap:18px;font-size:14px;overflow-x:auto;scrollbar-width:none}
 header nav::-webkit-scrollbar{display:none}
 header nav a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}
@@ -29,7 +33,7 @@ td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 footer{border-top:1px solid var(--line);padding:26px 0 44px;color:var(--muted);font-size:13px;text-align:center}
 footer .wrap{display:flex;flex-direction:column;align-items:center;gap:6px}
 footer a{color:var(--muted)}
-.fmk{height:20px;width:auto;opacity:.8}
+.fmk{height:28px;width:auto;opacity:.85}
 
 /* ── 회사 (로고: 남색 #1b2537 · 파랑 #3a8ee6) ── */
 .t-co{--bg:#f6f8fb;--panel:#ffffff;--text:#253044;--head:#1b2537;--muted:#6b778c;--line:#dfe5ee;--accent:#2f7fe0;--link:#2f7fe0;--hbg:rgba(246,248,251,.9);--font:"Noto Sans KR",system-ui,sans-serif;--r:12px}
