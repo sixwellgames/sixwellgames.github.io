@@ -67,3 +67,41 @@ a.gcard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,37,55,.14
 .t-abyss h2{font-family:"Noto Serif KR",serif}
 
 @media(max-width:680px){header .wrap{flex-wrap:wrap;gap:4px;padding-top:10px;padding-bottom:8px}header nav{margin-left:0;width:100%;gap:16px;font-size:13px}.hero h1{font-size:30px}.co-hero .slogan{font-size:20px}}
+
+/* ── 나는 리볼버 (도트 · 던전 · 횃불 · 금빛 탄피) ── */
+.t-rev{--bg:#110E0F;--panel:#1d1714;--text:#e8dccb;--head:#FFCF4D;--muted:#a3b4c6;--line:#3b2a1c;--accent:#FFCF4D;--link:#FF8F2E;--hbg:rgba(17,14,15,.92);--font:"Do Hyeon","Noto Sans KR",sans-serif;--r:4px}
+.t-rev{background:radial-gradient(90% 50% at 50% 0,#2a1a10 0,#110E0F 70%) fixed}
+.t-rev .dk{display:none}.t-rev .lt{display:inline-block}
+.t-rev main,.t-rev table{font-family:"Noto Sans KR",sans-serif}
+.t-rev h1,.t-rev h2,.t-rev h3,.t-rev header nav,.t-rev .subnav,.t-rev figcaption,.t-rev .rv-facts,.t-rev .rbtn{font-family:"Do Hyeon","Noto Sans KR",sans-serif;font-weight:400}
+.t-rev h2{font-size:26px;color:#FFCF4D;text-shadow:0 3px 0 #2A0E04;letter-spacing:.02em}
+.t-rev .doc h1{font-size:32px;color:#FFCF4D;text-shadow:0 3px 0 #2A0E04}
+.t-rev .subnav{display:flex;gap:16px;padding:14px 0 0;font-size:16px}
+.t-rev .subnav a{color:var(--muted);text-decoration:none}.t-rev .subnav a.on{color:#FF8F2E}
+.t-rev header nav a.on{color:#FFCF4D;border-bottom-color:#FF8F2E}
+.px{image-rendering:pixelated;image-rendering:crisp-edges}
+.rv-hero{margin:16px -18px 0}
+.rv-hero .key{display:block;width:100%;height:auto;image-rendering:pixelated}
+.rv-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 6px}
+.rbtn{display:inline-block;padding:12px 24px;font-size:19px;color:#2A0E04;text-decoration:none;background:linear-gradient(#FFCF4D,#FF8F2E);border:3px solid #2A0E04;box-shadow:0 4px 0 #2A0E04;border-radius:6px}
+.rbtn.ghost{background:#1d1714;color:#FFCF4D;border-color:#7C4A26;box-shadow:0 4px 0 #2A0E04}
+.rv-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
+.rv-facts div{background:#1d1714;border:2px solid #3b2a1c;border-radius:6px;text-align:center;padding:10px 4px}
+.rv-facts b{display:block;font-size:30px;color:#FFCF4D;text-shadow:0 2px 0 #2A0E04;font-weight:400}
+.rv-facts span{color:#a3b4c6;font-size:15px}
+.rv-grid{display:grid;gap:12px}
+.rv-grid figure{margin:0;background:#1d1714;border:2px solid #3b2a1c;border-radius:6px;padding:12px 8px 8px;text-align:center}
+.rv-grid figcaption{color:#FFCF4D;font-size:17px;margin-top:6px}
+.rv-grid img{max-width:100%;height:auto}
+.rv-grid.guns{grid-template-columns:repeat(2,1fr)}
+.rv-grid.bullets{grid-template-columns:repeat(4,1fr)}
+.rv-grid.bosses{grid-template-columns:repeat(3,1fr)}
+.rv-grid.bosses img{width:100%;max-width:200px}
+.t-rev th{background:#2a1a10;color:#FFCF4D}
+.t-rev .box{border-width:2px}
+.gcard.rev{background:#110E0F;color:#e8dccb;border-color:#3b2a1c}
+.gcard.rev .gbg{position:absolute;inset:0;background:center/cover no-repeat;opacity:.35;image-rendering:pixelated;mask-image:linear-gradient(90deg,transparent 15%,#000 75%);-webkit-mask-image:linear-gradient(90deg,transparent 15%,#000 75%)}
+.gcard.rev b{font-family:"Do Hyeon","Noto Sans KR",sans-serif;font-weight:400;font-size:22px;color:#FFCF4D}
+.gcard.rev small{color:#FF8F2E;opacity:1}
+.gcard .gic.px{width:96px;height:48px;border:0;object-fit:contain}
+@media(max-width:560px){.rv-grid.bullets{grid-template-columns:repeat(2,1fr)}.rv-facts b{font-size:24px}.rbtn{font-size:17px;padding:10px 18px}}
