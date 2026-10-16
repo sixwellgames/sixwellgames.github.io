@@ -77,7 +77,7 @@ a.gcard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,37,55,.14
 .t-rev{background:radial-gradient(90% 50% at 50% 0,#2a1a10 0,#110E0F 70%) fixed}
 .t-rev .dk{display:none}.t-rev .lt{display:inline-block}
 .t-rev main,.t-rev table{font-family:"Noto Sans KR",sans-serif}
-.t-rev h1,.t-rev h2,.t-rev h3,.t-rev header nav,.t-rev .subnav,.t-rev figcaption,.t-rev .rv-facts,.t-rev .rbtn{font-family:"Do Hyeon","Noto Sans KR",sans-serif;font-weight:400}
+.t-rev h1,.t-rev h2,.t-rev h3,.t-rev .subnav,.t-rev figcaption,.t-rev .rv-facts,.t-rev .rbtn{font-family:"Do Hyeon","Noto Sans KR",sans-serif;font-weight:400}
 .t-rev h2{font-size:26px;color:#FFCF4D;text-shadow:0 3px 0 #2A0E04;letter-spacing:.02em}
 .t-rev .doc h1{font-size:32px;color:#FFCF4D;text-shadow:0 3px 0 #2A0E04}
 .t-rev .subnav{display:flex;gap:16px;padding:14px 0 0;font-size:16px}
@@ -130,3 +130,6 @@ header .wrap{min-height:62px}
 .brand,.bname{line-height:1}
 @media(max-width:680px){header nav{gap:0!important}header nav a{font-size:13px!important}header nav a:nth-child(1){width:30px}header nav a:nth-child(2),header nav a:nth-child(3){width:79px}header nav a:nth-child(4){width:60px}header nav a:nth-child(5){width:104px}}
 @media(max-width:360px){header nav a{font-size:12px!important}header nav a:nth-child(1){width:26px}header nav a:nth-child(2),header nav a:nth-child(3){width:72px}header nav a:nth-child(4){width:54px}header nav a:nth-child(5){width:96px}}
+
+/* 상단 메뉴줄은 회사 공통: 모든 테마에서 같은 글꼴·굵기 → 글자 위치가 똑같다 (색만 테마) */
+header nav,header nav a,.t-abyss header nav a,.t-rev header nav a{font-family:"Noto Sans KR",system-ui,sans-serif!important;font-weight:500!important;letter-spacing:0!important}
