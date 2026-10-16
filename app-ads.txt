@@ -1,0 +1,4 @@
+# app-ads.txt for sixwellgames.github.io (Sixwell Games)
+# 광고 네트워크 계정이 만들어지면 각 콘솔이 주는 줄을 아래에 붙인다.
+# 예) AdMob:    google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# 예) AppLovin: MAX 콘솔 → Account → app-ads.txt 에서 받은 줄 전체
