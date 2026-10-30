@@ -4,7 +4,7 @@
 <main class="wrap">
 <div class="doc">
 <h1>개인정보처리방침</h1>
-<div class="meta">Sixwell Games · 시행일 2026년 10월 16일 · 최근 수정 2026년 10월 29일 (<a href="#history">개정 이력</a>)</div>
+<div class="meta">Sixwell Games · 시행일 2026년 10월 16일 · 최근 수정 2026년 10월 31일 (<a href="#history">개정 이력</a>)</div>
 <p>Sixwell Games(이하 「개발사」)는 아래 모바일 게임(이하 「게임」)을 운영하며, 「개인정보 보호법」 등 관련 법령을 지킵니다. 게임은 회원가입이 없고, 개발사는 게임을 통해 이름·전화번호·주소 같은 정보를 직접 받지 않습니다. 다만 결제와 광고를 위해 아래와 같은 정보가 처리됩니다.</p>
 <div class="box">적용 대상 (Android)<br>· 「심연의 역탑」 — 패키지 com.yeoktap.game<br>· 「나는 리볼버」 — 패키지 sixwell.iamrevolver (Play 테스트판: com.revolver.game.mc.lite)<br>게임마다 쓰는 기능이 다릅니다. 아래 결제·광고 항목은 그 기능이 들어간 게임·버전에만 적용되며, 새 게임이 나오면 이 목록에 추가합니다.</div>
 
@@ -19,6 +19,7 @@
 <tr><td>앱 품질</td><td>오류 정보(기기 모델·OS 버전·오류 내용)</td><td>오류 수정</td><td>Google Play (Play Console 통계)</td></tr>
 <tr><td>글꼴</td><td>IP 주소, 기기·브라우저 정보(User-Agent)</td><td>게임 화면 글꼴 표시 (「나는 리볼버」)</td><td>Google Fonts (Google LLC) — 실행할 때 글꼴을 받으며 전달됨</td></tr>
 <tr><td>이용 통계·오류</td><td>게임 안 행동 기록(스테이지 시작·종료와 결과, 뽑기·훈련, 광고 시청), 구매 이벤트(상품 ID·가격·성공 여부), 앱 비정상 종료·오류 기록, 기기·앱 정보(기기 모델·OS·앱 버전·대략적 지역), 앱 인스턴스 ID, 게임 ID(처음 실행할 때 기기에서 만드는 8자 번호 — 이름·이메일과 연결하지 않음)</td><td>게임 밸런스와 품질 개선, 오류 수정, 이용 통계 (「나는 리볼버」 Play 판)</td><td>Google Firebase (Analytics · Crashlytics), Google BigQuery</td></tr>
+<tr><td>온라인 순위</td><td>게임 ID(8자), 기기에서 만든 확인용 비밀키(서버에는 변환한 값만 저장), 시즌 번호, 깬 층 수, 걸린 시간, 편성한 탄환 목록, 게임 버전, IP 주소를 변환한 값(원래 IP 는 저장하지 않음), 기기·브라우저 정보(User-Agent) — 이름은 받지 않음</td><td>「나는 리볼버」 시련의 탑 온라인 순위 제공, 시즌 보상, 부정 기록 방지</td><td>Google Firebase (Cloud Functions · Firestore, 서울 리전)</td></tr>
 <tr><td>앱 업데이트</td><td>설치된 앱 버전</td><td>새 버전 확인·업데이트 안내 (「나는 리볼버」)</td><td>Google Play 인앱 업데이트</td></tr>
 </table></div>
 
@@ -36,6 +37,7 @@
 <li>기기 안의 게임 데이터: 앱 삭제 또는 앱 데이터 삭제 시 즉시 지워집니다.</li>
 <li>결제 기록: 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 대금결제 및 재화 공급 기록 5년, 소비자 불만·분쟁 처리 기록 3년 보관 후 파기합니다(Google Play 가 보관하는 기록 포함).</li>
 <li>문의 메일: 답변 완료 후 3년 보관 후 삭제합니다.</li>
+<li>온라인 순위(「나는 리볼버」 시련의 탑): 순위 기록은 시즌 순위와 보상을 제공하는 동안 보관하고, 부정 기록 표시는 30일 뒤 삭제합니다. 서버 접속 기록은 Google Cloud 의 기본 보관 기간에 따라 삭제됩니다.</li>
 <li>보유 기간이 지난 정보는 복구할 수 없는 방법으로 지체 없이 파기합니다.</li>
 </ul>
 
@@ -45,7 +47,7 @@
 <li>기기 안의 게임 데이터는 앱 삭제 또는 <b>설정 → 애플리케이션 → (게임 이름) → 저장공간 → 데이터 삭제</b>로 직접 지울 수 있습니다.</li>
 <li>광고 식별자: <b>설정 → 개인정보 보호(또는 Google) → 광고</b>에서 광고 ID 를 삭제하거나 재설정할 수 있습니다. 삭제하면 맞춤형 광고에 쓰이지 않습니다.</li>
 <li>게임 안에 개인정보 수집 동의 창이 표시되는 지역에서는 언제든 동의를 바꿀 수 있습니다.</li>
-<li>「나는 리볼버」의 게임 ID 는 타이틀 화면 왼쪽 아래에 표시됩니다. 이용 통계·오류 기록의 열람·삭제를 요청할 때 이 번호를 알려 주세요. 앱 데이터를 지우면 새 게임 ID 가 만들어집니다.</li>
+<li>「나는 리볼버」의 게임 ID 는 타이틀 화면 왼쪽 아래에 표시됩니다. 이용 통계·오류 기록이나 온라인 순위 기록의 열람·삭제를 요청할 때 이 번호를 알려 주세요. 앱 데이터를 지우면 새 게임 ID 가 만들어집니다.</li>
 <li>유럽경제지역·영국·스위스 등 동의가 필요한 지역에서는 처음 실행할 때 Google 의 광고 동의 창이 뜹니다. 「나는 리볼버」는 설정(일시 정지) 화면의 <b>「광고 개인정보 설정」</b>에서 언제든 선택을 바꿀 수 있습니다. 동의하지 않아도 게임은 그대로 할 수 있고, 맞춤형이 아닌 광고가 나올 수 있습니다.</li>
 </ul>
 
@@ -53,7 +55,7 @@
 <p>게임은 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 아동의 정보가 처리된 사실을 알게 되면 즉시 삭제합니다.</p>
 
 <h2>6. 안전성 확보 조치</h2>
-<p>게임은 꼭 필요한 외부 연결(결제·광고·광고 동의·글꼴·이용 통계, 1·2항)만 쓰고, 결제는 Google Play 를 통해서만 이루어지며, 통신은 암호화됩니다. 문의 메일은 접근 권한이 제한된 계정에서만 처리합니다.</p>
+<p>게임은 꼭 필요한 외부 연결(결제·광고·광고 동의·글꼴·이용 통계·온라인 순위, 1·2항)만 쓰고, 결제는 Google Play 를 통해서만 이루어지며, 통신은 암호화됩니다. 문의 메일은 접근 권한이 제한된 계정에서만 처리합니다.</p>
 
 <h2>7. 개인정보 보호책임자</h2>
 <p>Sixwell Games 대표 · 이메일 <a href="mailto:joonpark921414@gmail.com">joonpark921414@gmail.com</a></p>
@@ -71,6 +73,7 @@
 <p>이 방침이 바뀌면 시행 7일 전(이용자 권리에 중대한 변경은 30일 전)부터 이 페이지에 알립니다.</p>
 <h3 id="history">개정 이력</h3>
 <ul>
+<li>2026-10-31: 「나는 리볼버」 시련의 탑 온라인 순위(순위 서버) 항목·보유 기간 추가</li>
 <li>2026-10-29: 쓰지 않는 AppLovin MAX 삭제, 광고 미디에이션 파트너(Unity Ads)가 적용되는 게임 명시, 광고 동의 창 안내 추가</li>
 <li>2026-10-27: 「나는 리볼버」 이용 통계·오류(Firebase)·게임 ID·인앱 업데이트 추가</li>
 <li>2026-10-19: 「나는 리볼버」 Play 테스트판 패키지 병기</li>
@@ -78,7 +81,7 @@
 </ul>
 
 <h2 id="en">Summary in English</h2>
-<p>Sixwell Games does not require an account and does not collect your name or contact details through the game. Game progress is stored only on your device. Purchases are processed by Google Play (we receive only order/purchase identifiers). Ads are managed by Google AdMob; in "I Am Revolver" (v1.11.87 and later), AdMob mediation may also fill ads from Unity Ads. Ad partners may collect your advertising ID, device information, IP address and ad interaction data to show and measure ads. "I Am Revolver" also sends gameplay events, purchase events, crash/error logs, basic device/app info and a random 8-character game ID (not linked to your name or email) to Google Firebase (Analytics, Crashlytics) and BigQuery to improve the game, and checks Google Play for updates. You can reset or delete your advertising ID in Android settings and delete game data by uninstalling the app or clearing its data. Where required (e.g. EEA, UK, Switzerland), a Google consent form is shown on first launch; in "I Am Revolver" you can change your choice under Settings (광고 개인정보 설정). The game is not directed to children under 14. Contact: <a href="mailto:joonpark921414@gmail.com">joonpark921414@gmail.com</a></p>
+<p>Sixwell Games does not require an account and does not collect your name or contact details through the game. Game progress is stored only on your device. Purchases are processed by Google Play (we receive only order/purchase identifiers). Ads are managed by Google AdMob; in "I Am Revolver" (v1.11.87 and later), AdMob mediation may also fill ads from Unity Ads. Ad partners may collect your advertising ID, device information, IP address and ad interaction data to show and measure ads. "I Am Revolver" also sends gameplay events, purchase events, crash/error logs, basic device/app info and a random 8-character game ID (not linked to your name or email) to Google Firebase (Analytics, Crashlytics) and BigQuery to improve the game, and checks Google Play for updates. For the online ranking of the Trial Tower, it sends your game ID, a hashed device key, season, floors cleared, time, chosen bullets and game version (no name) to a Google Firebase server in Seoul; a hashed IP and User-Agent are logged to prevent abuse. "I Am Revolver" also sends gameplay events, purchase events, crash/error logs, basic device/app info and a random 8-character game ID (not linked to your name or email) to Google Firebase (Analytics, Crashlytics) and BigQuery to improve the game, and checks Google Play for updates. You can reset or delete your advertising ID in Android settings and delete game data by uninstalling the app or clearing its data. Where required (e.g. EEA, UK, Switzerland), a Google consent form is shown on first launch; in "I Am Revolver" you can change your choice under Settings (광고 개인정보 설정). The game is not directed to children under 14. Contact: <a href="mailto:joonpark921414@gmail.com">joonpark921414@gmail.com</a></p>
 </div></main>
 <footer><div class="wrap"><img class="fmk dk" src="/img/sixwell-mark.png?v=55bfbbb8" alt="" width="23" height="28"><img class="fmk lt" src="/img/sixwell-mark-light.png?v=147a8f50" alt="" width="23" height="28"><div>© 2026 Sixwell Games · <a href="mailto:joonpark921414@gmail.com">joonpark921414@gmail.com</a></div><div><a href="/privacy.html">개인정보처리방침</a> · <a href="/support.html">고객지원</a></div></div></footer>
 </body></html>
